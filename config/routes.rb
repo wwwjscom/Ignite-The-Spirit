@@ -11,6 +11,7 @@ ActionController::Routing::Routes.draw do |map|
   map.meet '/meet.aspx', :controller => 'meets', :action => 'index'
   map.store '/store.aspx', :controller => 'store'
   map.supporters '/supporters.aspx', :controller => 'welcomes', :action => 'supporters'
+  map.contact '/contact.aspx', :controller => 'welcomes', :action => 'contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
 

@@ -1,0 +1,38 @@
+<% if request.post? %>
+  <img src=images/lilshimmy.gif height=15><br>
+  <table border=0 cellpadding=0 cellspacing=0>
+    <tr>
+      <td width=349>
+        <span class=norm>
+          Thank you for your interest in Ignite the Spirit. We will respond to your inquiry via email. Your support is appreciated!<br>
+        </span>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <img src=images/lilshimmy.gif height=15><br>
+  <img src=images/contact_header.gif><br>
+  <form action=contact_thankyou.aspx method=post>
+    <span class=norm>
+      We would like to hear from you.<br>
+      <br>
+      Name<br>
+      <input type=text name=name class=norm style="width: 300px;"><br>
+      <br>
+      Email address<br>
+      <input type=text name=email class=norm style="width: 300px;"><br>
+      <br>
+      Enter comments<br>
+      <textarea name=comment cols=25 rows=8 wrap=soft class=norm style="width: 300px;"></textarea><br>
+      <br>
+      <input type=image src=images/button_submit.gif border=0><br>
+      <br>
+      Mail correspondence to:<br>
+      Ignite the Spirit Fund<br>
+      5447 W. Cullom<br>
+      Chicago, IL 60641<br>
+      <br>
+      Phone: 773-218-1038<br>
+      <br>
+    </span>
+  <% end %>

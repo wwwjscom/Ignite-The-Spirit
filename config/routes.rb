@@ -1,6 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
 
+  # Since I cannot currently edit the swf/fla files, these routes
+  # are needed to fake out the flash and direct to the coorect
+  # pages
   map.about '/about.aspx', :controller => 'welcomes', :action => 'about'
+  map.home '/index.aspx', :controller => 'welcomes'
+  map.meet '/meet.aspx', :controller => 'meets', :action => 'index'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -33,7 +39,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  map.root :controller => "welcomes"
+  map.root :home 
 
   # See how all your routes lay out with "rake routes"
 

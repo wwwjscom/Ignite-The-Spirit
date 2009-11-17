@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'fonts.css' %>
+    <%= javascript_include_tag 'main.js' %>
+    <%= image_tag 'lilshimmy.gif', :height => 15 %><br>
+  </head>
+  <body bgcolor=383838 marginwidth=0 marginheight=0 leftmargin=0 topmargin=0>
+    <center>
+
+      <%= render :partial => '/layouts/flash_hdr' %>
+
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td width=3 bgcolor=ffffff><br></td>
+          <td width=115 valign=top align=center bgcolor=e5e5e5>
+            <%= image_tag 'lilshimmy.gif', :height => 5 %><br>
+            <%= image_tag 'logo.gif' %><br>
+          </td>
+
+          <!-- content -->
+          <td width=354 valign=top bgcolor=e5e5e5>
+            <%= yield %>
+          </td>
+          <!-- /content -->
+
+          <td width=10 bgcolor=e5e5e5><br></td>
+          <td width=3 bgcolor=ffffff><br></td>
+          <td width=269 valign=top bgcolor=ffffff>
+            <!-- <a href=store.aspx><img src=index_calendar.gif border=0></a><br> -->
+            <a href=store.aspx><img src=images/buynow.jpg border=0></a><br>
+            <%= image_tag 'lilwhite.gif', :width => 269, :height => 3%><br>
+            <table border=0 cellpadding=0 cellspacing=0 bgcolor=FFFFFF>
+              <tr>
+                <td width=5 bgcolor=f2f2f2><img src=images/lilshimmy.gif width=1 height=200><br></td>
+                <td width=259 valign=top bgcolor=f2f2f2>
+                  <img src=images/lilshimmy.gif height=15><br>
+                  <span class=small>
+                  </span>
+                  <br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </center>
+  </body>
+</html>

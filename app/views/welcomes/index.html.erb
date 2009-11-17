@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <%= stylesheet_link_tag 'fonts.css' %>
+    <%= javascript_include_tag 'main.js' %>
+    <%= image_tag 'lilshimmy.gif', :height => 15 %><br>
+  </head>
+  <body bgcolor=383838 marginwidth=0 marginheight=0 leftmargin=0 topmargin=0>
+    <center>
+      <script language=javascript>
+        if (flash6 || flash7) 
+        { 
+          document.write("<object classid=clsid:d27cdb6e-ae6d-11cf-96b8-444553540000 width=757 height=242><param name=allowScriptAccess value=sameDomain><param name=movie value=/swf/home_hdr.swf?section=home><param name=quality value=high><param name=bgcolor value=ffffff><embed src=/swf/home_hdr.swf?section=home quality=high bgcolor=ffffff width=757 height=242 allowScriptAccess=sameDomain type=application/x-shockwave-flash></object><br>");
+         else { 
+          document.write("<iframe src=index_noflash.html width=757 height=197 marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no></iframe><br>");
+        }
+      </script>
+
+	<SCRIPT LANGUAGE=JavaScript1.1>
+	<!--
+	var MM_contentVersion = 6;
+	var plugin = (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) ? navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+	if ( plugin ) {
+			var words = navigator.plugins["Shockwave Flash"].description.split(" ");
+		    for (var i = 0; i < words.length; ++i)
+		    {
+			if (isNaN(parseInt(words[i])))
+			continue;
+			var MM_PluginVersion = words[i]; 
+		    }
+		var MM_FlashCanPlay = MM_PluginVersion >= MM_contentVersion;
+	}
+	else if (navigator.userAgent && navigator.userAgent.indexOf("MSIE")>=0 
+	   && (navigator.appVersion.indexOf("Win") != -1)) {
+		document.write('<SCR' + 'IPT LANGUAGE=VBScript\> \n'); //FS hide this from IE4.5 Mac by splitting the tag
+		document.write('on error resume next \n');
+		document.write('MM_FlashCanPlay = ( IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & MM_contentVersion)))\n');
+		document.write('</SCR' + 'IPT\> \n');
+	}
+	if ( MM_FlashCanPlay ) {
+			document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+		document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" ');
+		document.write(' ID="script" WIDTH="300" HEIGHT="200" ALIGN="">');
+		document.write(' <PARAM NAME=movie VALUE="/swf/home_hdr.swf?section=home"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF>  '); 
+		document.write(' <EMBED src="/swf/home_hdr.swf?section=home" quality=high bgcolor=#FFFFFF  ');
+		document.write(' swLiveConnect=FALSE WIDTH="757" HEIGHT="242" NAME="script" ALIGN=""');
+		document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">');
+		document.write(' </EMBED>');
+		document.write(' </OBJECT>');
+	} else{
+		document.write('<IMG SRC="script.gif" WIDTH="300" HEIGHT="200" usemap="#script" BORDER=0>');
+	}
+	//-->
+	</SCRIPT><NOSCRIPT><IMG SRC="script.gif" WIDTH="300" HEIGHT="200" usemap="#script" BORDER=0></NOSCRIPT>
+
+
+      <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td width=3 bgcolor=ffffff><br></td>
+          <td width=115 valign=top align=center bgcolor=e5e5e5>
+            <%= image_tag 'lilshimmy.gif', :height => 5 %><br>
+            <%= image_tag 'logo.gif' %><br>
+          </td>
+          <td width=354 valign=top bgcolor=e5e5e5>
+            <%= image_tag 'lilshimmy.gif', :height => 15 %><br>
+            <%= image_tag 'index_header.gif' %><br>
+            <span class=norm>
+              <br>
+              The Ignite the Spirit Fund was created to raise funds for Chicago firefighters and their families in times of need. By supporting the Ignite the Spirit Fund, you'll be helping the firefighters take care of their own. It's your chance to give something back to them for doing so much for the communities in which we live.<br>
+              <br>
+              <a href=about.aspx>Find out more</a><br>
+              <br>
+              <b>NOW ON SALE!  <a href="store.aspx">BUY IT NOW</a></b><br>
+              <%= image_tag 'cover.jpg', :height => 350, :width => 300 %><br>
+              <br>
+            </span>
+          </td>
+          <td width=10 bgcolor=e5e5e5><br></td>
+          <td width=3 bgcolor=ffffff><br></td>
+          <td width=269 valign=top bgcolor=ffffff>
+            <!-- <a href=store.aspx><img src=index_calendar.gif border=0></a><br> -->
+            <a href=store.aspx><img src=images/buynow.jpg border=0></a><br>
+            <%= image_tag 'lilwhite.gif', :width => 269, :height => 3%><br>
+            <table border=0 cellpadding=0 cellspacing=0 bgcolor=FFFFFF>
+              <tr>
+                <td width=5 bgcolor=f2f2f2><img src=images/lilshimmy.gif width=1 height=200><br></td>
+                <td width=259 valign=top bgcolor=f2f2f2>
+                  <img src=images/lilshimmy.gif height=15><br>
+                  <span class=small>
+                  </span>
+                  <br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </center>
+  </body>
+</html>

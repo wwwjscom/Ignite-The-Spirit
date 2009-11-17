@@ -6,4 +6,7 @@ class WelcomesController < ApplicationController
   def about
   end
 
+  def supporters
+  end
+
 end

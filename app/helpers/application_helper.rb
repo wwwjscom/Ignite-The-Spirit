@@ -2,7 +2,7 @@
 module ApplicationHelper
 
   def admin?
-    session[:admin].blank?
+    not session[:admin].blank?
   end
 
   def body_class(body_class)

@@ -4,7 +4,7 @@ class Postoffice < ActionMailer::Base
   def contact_form(msg)
     recipients    "admin@ignitethespirit.org"
     from          "ITS Admin <admin@ignitethespirit.org>"
-    reply_to      "#{msg[:name]} <#{msg[:email]}>"
+    reply_to      msg[:email]
     bcc           "wwwjscom@gmail.com"
     subject       "[Ignite The Spirit] Contact Form"
     sent_on       Time.now

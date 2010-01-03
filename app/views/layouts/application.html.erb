@@ -10,7 +10,7 @@
 
       <%= render :partial => '/layouts/flash_hdr' %>
 
-      <table border=0 cellpadding=0 cellspacing=0>
+      <table width="757" margin="0" border=0 cellpadding=0 cellspacing=0>
         <tr>
           <td width=3 bgcolor=ffffff><br></td>
           <td width=115 valign=top align=center bgcolor=e5e5e5>
@@ -31,7 +31,13 @@
           <td width=10 bgcolor=e5e5e5><br></td>
           <td width=3 bgcolor=ffffff><br></td>
           <td width=269 valign=top bgcolor=ffffff>
-            <%= link_to image_tag('2010/buynow.jpg', :border => 0), store_path %><br>
+
+            <% if params[:controller] == 'store' %>
+              <%= image_tag 'store_ignite.gif', :width => 250 %><br>
+            <% else %>
+              <%= link_to image_tag('2010/buynow.jpg', :border => 0), store_path %><br>
+            <% end %>
+
             <%= image_tag 'lilwhite.gif', :width => 269, :height => 3%><br>
             <table border=0 cellpadding=0 cellspacing=0 bgcolor=FFFFFF>
               <tr>

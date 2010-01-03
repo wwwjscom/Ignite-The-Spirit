@@ -26,3 +26,20 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+
+
+# Heroku email config
+# http://docs.heroku.com/smtp
+# http://wiki.slicehost.com/doku.php?id=lightweight_mail_relay_to_google_apps_or_gmail_smtp_server#a_lightweight_smtp_relay_using_google_apps_email
+require "smtp_tls"
+ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.smtp_settings = {
+  :tls => true, 
+  :address        => 'smtp.gmail.com',
+  :port           => 587,
+  :domain         => 'ignitethespirit.org',
+  :authentication => :plain,
+  :user_name      => 'admin@ignitethespirit.org',
+  :password       => '746U86'
+}

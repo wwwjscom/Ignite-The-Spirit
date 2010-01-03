@@ -14,6 +14,8 @@ class WelcomesController < ApplicationController
   end
 
   def contact_thanks
+    msg = { :msg => params[:msg], :name => params[:name], :email => params[:email] }
+    Postoffice.deliver_contact_form(msg)
   end
 
 end

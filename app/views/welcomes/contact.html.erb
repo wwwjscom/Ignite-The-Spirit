@@ -8,12 +8,13 @@
     <%= text_field_tag :name %>
     <br>
     Email address<br>
-    <input type=text name=email class=norm style="width: 300px;"><br>
+    <%= text_field_tag :email %>
     <br>
     Enter comments<br>
-    <textarea name=comment cols=25 rows=8 wrap=soft class=norm style="width: 300px;"></textarea><br>
+    <%= text_area_tag :msg, nil, :cols => 40, :rows => 10 %>
     <br>
-    <input type=image src=images/button_submit.gif border=0><br>
+    <%= image_submit_tag 'button_submit.gif' %>
+    <br>
     <br>
     Mail correspondence to:<br>
     Ignite the Spirit Fund<br>

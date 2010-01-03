@@ -1,5 +1,7 @@
 <span class="recent_news">
-  <h1>Recent News & Events</h1>
-  <h4><%= Post.recent.title.titleize %></h4>
-  <%= simple_format truncate(Post.recent.body, :length => 400, :omission => "..." + link_to("<br />(more)", post_path(Post.recent.id))) %>
+    <h1>Recent News & Events</h1>
+  <% Post.recent(3).each do |p| %>
+    <h4><%= p.title.titleize %></h4>
+    <%= simple_format truncate(p.body, :length => 200, :omission => "..." + link_to("(more)", post_path(p))) %>
+  <% end %>
 </span>

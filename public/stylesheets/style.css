@@ -10,13 +10,16 @@
 .recent_news p
 {
   font-size               : 0.8em;
-  line-height             : 20px;
+  line-height             : 18px;
+  padding                 : 0 0 9px 0;
+  margin                  : 0;
 }
 
 .recent_news h4
 {
   margin                  : 0;
   padding                 : 0;
+  font-size               : 0.9em;
 }
 
 .recent_news

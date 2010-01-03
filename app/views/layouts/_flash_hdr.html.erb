@@ -28,28 +28,30 @@ function MM_swapImage() { //v3.0
 <table id="Table_01" width="757" height="185" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td colspan="19">
-			<img src="images/no_flash_top.gif" width="757" height="40" alt=""></td>
+      <%= image_tag 'no_flash_top.gif', :width => 757, :height => 40 %>
+    </td>
 	</tr>
 	<tr>
 		<td colspan="2">
-			<a href="/index.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','images/no_flash_home_over.gif',1)"><img src="images/no_flash_home.gif" name="Image41" width="108" height="33" border="0"></a><a href="index.aspx"></a></td>
+      <%= link_to image_tag("no_flash_home.gif", :name => "Image41", :width => 108, :height => 33, :border => 0), root_path, :onMouseOver => "MM_swapImage('Image41','','/images/no_flash_home_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="3">
-			<a href="/about.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','images/no_flash_about_over.gif',1)"><img src="images/no_flash_about.gif" name="Image42" width="107" height="33" border="0"></a><a href="about.aspx"></a></td>
+      <%= link_to image_tag("no_flash_about.gif", :name => "Image42", :width => 107, :height => 33, :border => 0), about_path, :onMouseOver => "MM_swapImage('Image42','','/images/no_flash_about_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="3">
       <%= link_to image_tag("no_flash_meet.gif", :width => 115, :height => "33"), meet_path %></td>
       <!-- <a href="/meet.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','images/no_flash_meet_over.gif',1)"><img src="images/no_flash_meet.gif" name="Image43" width="115" height="33" border="0"></a><a href="meet.aspx"></a></td> -->
 		<td colspan="3">
-			<a href="/store.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_store.gif" name="Image44" width="105" height="33" border="0"></a><a href="store.aspx"></a></td>
+      <%= link_to image_tag("no_flash_store.gif", :name => "Image44", :width => 105, :height => 33, :border => 0), store_path, :onMouseOver => "MM_swapImage('Image44','','/images/no_flash_store_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="3">
-      <%= link_to image_tag("no_flash_news.gif", :name => "Image45", :width => 104, :height => 33, :border => 0), posts_path, :onMouseOver => "MM_swapImage('Image45','','images/no_flash_news_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
+      <%= link_to image_tag("no_flash_news.gif", :name => "Image45", :width => 104, :height => 33, :border => 0), posts_path, :onMouseOver => "MM_swapImage('Image45','','/images/no_flash_news_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="3">
-			<a href="/supporters.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','images/no_flash_supporters_over.gif',1)"><img src="images/no_flash_supporters.gif" name="Image46" width="108" height="33" border="0"></a><a href="supporters.aspx"></a></td>
+      <%= link_to image_tag("no_flash_supporters.gif", :name => "Image46", :width => 108, :height => 33, :border => 0), supporters_path, :onMouseOver => "MM_swapImage('Image46','','/images/no_flash_supporters_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="2">
-			<a href="/contact.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image47','','images/no_flash_contact_over.gif',1)"><img src="images/no_flash_contact.gif" name="Image47" width="110" height="33" border="0"></a><a href="contact.aspx"></a></td>
+      <%= link_to image_tag("no_flash_contact.gif", :name => "Image47", :width => 110, :height => 33, :border => 0), contact_path, :onMouseOver => "MM_swapImage('Image47','','/images/no_flash_contact_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 	</tr>
 	<tr>
 		<td colspan="19">
-			<img src="images/no_flash_middle.gif" width="757" height="109" alt=""></td>
+      <%= image_tag 'no_flash_middle.gif', :width => 757, :height => 109 %> 
+    </td>
 	</tr>
 
 

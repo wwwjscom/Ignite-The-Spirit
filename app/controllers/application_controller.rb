@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+
+
+  def bouncer
+    unless session[:admin]
+      redirect_to :action => 'login'
+    end
+  end
+
 end

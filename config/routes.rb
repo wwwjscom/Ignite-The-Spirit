@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.connect '/news.aspx', :controller => 'posts'
   map.resources :posts
+  map.resources :admins, :collection => [:login]
 
 
   # Since I cannot currently edit the swf/fla files, these routes

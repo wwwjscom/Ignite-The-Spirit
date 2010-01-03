@@ -1,0 +1,22 @@
+.recent_news h1
+{
+  padding               : 10px;
+  font-size             : 1.1em;
+}
+
+.recent_news p
+{
+  font-size               : 0.8em;
+  line-height             : 20px;
+}
+
+.recent_news h4
+{
+  margin                  : 0;
+  padding                 : 0;
+}
+
+.recent_news
+{
+  height                  : 500px;
+}

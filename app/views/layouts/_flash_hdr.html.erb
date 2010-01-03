@@ -41,7 +41,7 @@ function MM_swapImage() { //v3.0
 		<td colspan="3">
 			<a href="/store.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_store.gif" name="Image44" width="105" height="33" border="0"></a><a href="store.aspx"></a></td>
 		<td colspan="3">
-			<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','images/no_flash_store_over.gif',1)"><img src="images/no_flash_news.gif" name="Image45" width="104" height="33" border="0"></a><a href="#"></a></td>
+      <%= link_to image_tag("no_flash_news.gif", :name => "Image45", :width => 104, :height => 33, :border => 0), posts_path, :onMouseOver => "MM_swapImage('Image45','','images/no_flash_news_over.gif',1)", :onMouseOut => "MM_swapImgRestore()" %>
 		<td colspan="3">
 			<a href="/supporters.aspx" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','images/no_flash_supporters_over.gif',1)"><img src="images/no_flash_supporters.gif" name="Image46" width="108" height="33" border="0"></a><a href="supporters.aspx"></a></td>
 		<td colspan="2">

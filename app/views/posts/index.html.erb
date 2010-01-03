@@ -9,7 +9,7 @@
     <h3><%= link_to post.title.titleize, post %></h3>
     <%= simple_format post.body %>
 
-    <%= post.updated_at.strftime("%m/%d/%Y") %>
+    <p class="post_date">Posted on <%= post.updated_at.strftime("%m/%d/%Y") %></p>
 
     <% if admin? %>
       <br />

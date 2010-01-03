@@ -33,9 +33,9 @@
           <td width=269 valign=top bgcolor=ffffff>
 
             <% if params[:controller] == 'store' %>
-              <%= image_tag 'store_ignite.gif', :width => 250 %><br>
+              <%= image_tag 'store_ignite.gif', :width => 268 %><br>
             <% else %>
-              <%= link_to image_tag('2010/buynow.jpg', :border => 0), store_path %><br>
+              <%= link_to image_tag('2010/buynow.jpg', :width => 268, :height => 171, :border => 0), store_path %><br>
             <% end %>
 
             <%= image_tag 'lilwhite.gif', :width => 269, :height => 3%><br>
@@ -44,7 +44,7 @@
                 <td width=5 bgcolor=f2f2f2> 
                   <%= image_tag 'lilshimmy.gif', :width => 1, :height => 400 %><br />
                 </td>
-                <td width=259 valign=top bgcolor=f2f2f2>
+                <td width=263 valign=top bgcolor=f2f2f2>
                   <%= render :partial => '/layouts/recent_news' %>
                   <%= image_tag 'lilshimmy.gif', :height => 15 %><br />
                   <span class=small>

@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
 
   def bouncer
     unless session[:admin]
-      redirect_to :action => 'login'
+      redirect_to :action => 'login', :controller => 'admins'
     end
   end
 

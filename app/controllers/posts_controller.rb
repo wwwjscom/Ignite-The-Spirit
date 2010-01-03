@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_filter :bouncer, :except => [:show]
+  before_filter :bouncer, :except => [:show, :index]
 
   # GET /posts
   # GET /posts.xml

@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :bios
+
+  map.resources :cal_years
+
   map.connect '/news.aspx', :controller => 'posts'
   map.resources :posts
   map.resources :admins, :collection => [:login, :logout]

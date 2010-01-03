@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%=h @bio.name %>
+</p>
+
+<p>
+  <b>Thumb image url:</b>
+  <%=h @bio.thumb_image_url %>
+</p>
+
+<p>
+  <b>Full image url:</b>
+  <%=h @bio.full_image_url %>
+</p>
+
+<p>
+  <b>Bio:</b>
+  <%=h @bio.bio %>
+</p>
+
+<p>
+  <b>Cal year:</b>
+  <%=h @bio.cal_year_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bio_path(@bio) %> |
+<%= link_to 'Back', bios_path %>

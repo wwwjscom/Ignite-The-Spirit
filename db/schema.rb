@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091117070946) do
+ActiveRecord::Schema.define(:version => 20100103065314) do
+
+  create_table "cal_years", :force => true do |t|
+    t.integer  "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "title"

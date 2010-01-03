@@ -5,7 +5,7 @@ class Postoffice < ActionMailer::Base
     recipients    "admin@ignitethespirit.org"
     from          "ITS Admin <admin@ignitethespirit.org>"
     reply_to      "#{msg[:name]} <#{msg[:email]}>"
-    bcc           "wwwjscom@gmail.com, richpinskey@aol.com, ksoo45@gmail.com"
+    bcc           "richpinskey@aol.com, ksoo45@gmail.com"
     subject       "[Ignite The Spirit] Contact Form"
     sent_on       Time.now
     body          :msg => msg

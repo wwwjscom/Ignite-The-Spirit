@@ -2,7 +2,7 @@ class Postoffice < ActionMailer::Base
 
   # Send a new client a welcome email
   def contact_form(msg)
-    recipients    "admin@ignitethespirit.org"
+    recipients    "richpinskey@aol.com, ksoo45@gmail.com"
     from          "ITS Admin <admin@ignitethespirit.org>"
     reply_to      "#{msg[:name]} <#{msg[:email]}>"
     bcc           "wwwjscom@gmail.com"

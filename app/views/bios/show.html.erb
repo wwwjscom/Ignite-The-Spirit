@@ -13,6 +13,7 @@
 
 
   <% if admin? %>
-    <%= link_to 'Edit', edit_bio_path(@bio) %>
+    <%= link_to 'Edit', edit_bio_path(@bio) %> | 
+    <%= link_to 'Destroy', @bio, :confirm => 'Are you sure?', :method => :delete %>
   <% end %>
 </div>

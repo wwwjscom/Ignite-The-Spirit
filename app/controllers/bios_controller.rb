@@ -5,12 +5,8 @@ class BiosController < ApplicationController
   # GET /bios
   # GET /bios.xml
   def index
-    @bios = Bio.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @bios }
-    end
+    # No one should be here
+    redirect_to root_url
   end
 
   # GET /bios/1

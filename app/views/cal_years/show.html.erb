@@ -17,5 +17,6 @@
 <br /> <br />
 
 <% if admin? %>
-  <%= link_to 'Edit', edit_cal_year_path(@cal_year) %>
+  <%= link_to 'Edit', edit_cal_year_path(@cal_year) %> | 
+  <%= link_to 'Destroy', @cal_year, :confirm => 'Are you sure?', :method => :delete %>
 <% end %>

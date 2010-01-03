@@ -56,11 +56,12 @@ body.meet .years li
 .admin_nav ul
 {
   margin                  : 0;
-  padding                 : 0 0 0 2px;
+  padding                 : 10px 0 0 2px;
 }
 
 .admin_nav li
 {
+  padding                 : 3px 0;
   list-style              : none;
   text-align              : left;
 }

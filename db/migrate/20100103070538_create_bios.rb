@@ -6,6 +6,7 @@ class CreateBios < ActiveRecord::Migration
       t.string :full_image_url
       t.text :bio
       t.integer :cal_year_id
+      t.integer :month_id
 
       t.timestamps
     end

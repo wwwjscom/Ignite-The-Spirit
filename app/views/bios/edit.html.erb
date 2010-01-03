@@ -21,12 +21,13 @@
   </p>
   <p>
     <%= f.label :cal_year_id %><br />
-    <%= f.text_field :cal_year_id %>
+    <%= f.collection_select :cal_year_id, CalYear.all, :id, :year %>
+  </p>
+  <p>
+    <%= f.label :month %><br />
+    <%= f.collection_select :month_id, Month.all, :id, :month %>
   </p>
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
-
-<%= link_to 'Show', @bio %> |
-<%= link_to 'Back', bios_path %>

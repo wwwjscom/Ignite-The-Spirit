@@ -1,20 +1,32 @@
-<h1>Listing cal_years</h1>
+<% title 'Profiles' %>
+<% body_class 'meet' %>
 
-<table>
-  <tr>
-    <th>Year</th>
-  </tr>
+<h1>All Calendar Years</h1>
 
-<% @cal_years.each do |cal_year| %>
+<img src=images/lilshimmy.gif height=15><br>
+<table border=0 cellpadding=0 cellspacing=0>
   <tr>
-    <td><%=h cal_year.year %></td>
-    <td><%= link_to 'Show', cal_year %></td>
-    <td><%= link_to 'Edit', edit_cal_year_path(cal_year) %></td>
-    <td><%= link_to 'Destroy', cal_year, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td width=354>
+      <span class=norm>
+        <b>Select a firefighter above to learn more!</b><br>
+        <br>
+        Firefighters are everyday people, with one exception - when they go to work, they are literally putting their lives at risk. Along with the job comes a strong sense of camaraderie and honor. Click on any of the photos above for a glimpse into the lives of Chicago firefighters -- <i>Profile coming soon</i><br>
+        <br>
+      </span>
+    </td>
   </tr>
-<% end %>
 </table>
 
-<br />
 
-<%= link_to 'New cal_year', new_cal_year_path %>
+
+<span class="years">
+  <ul>
+    <% @cal_years.each do |cal_year| %>
+      <li><%= link_to cal_year.year, cal_year %></li>
+      <% if admin? %>
+        <br />
+        <%= link_to 'Edit', edit_cal_year_path(cal_year) %> | <%= link_to 'Destroy', cal_year, :confirm => 'Are you sure?', :method => :delete %>
+      <% end %>
+    <% end %>
+  </ul>
+</span>

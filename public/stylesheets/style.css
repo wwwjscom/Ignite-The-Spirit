@@ -1,7 +1,10 @@
+/******************************************
+ * Recent news
+ *****************************************/
 .recent_news h1
 {
-  padding               : 10px;
-  font-size             : 1.1em;
+  padding                 : 10px;
+  font-size               : 1.1em;
 }
 
 .recent_news p
@@ -22,17 +25,111 @@
 }
 
 
-
-
-
-
-
-
-
-
-
+/******************************************
+ * News Posts
+ *****************************************/
 .news_post h3
 {
   padding                 : 20px 0 0 0;
   text-align              : center;
+}
+
+
+/******************************************
+ * Calendar year listings
+ *****************************************/
+body.meet .years ul
+{
+  margin                  : 0 0 0 60px;
+}
+
+body.meet .years li
+{
+  list-style              : none;
+  font-size               : 3em;
+}
+
+
+/******************************************
+ * Admin Nav
+ *****************************************/
+.admin_nav ul
+{
+  margin                  : 0;
+  padding                 : 0 0 0 2px;
+}
+
+.admin_nav li
+{
+  list-style              : none;
+  text-align              : left;
+}
+
+
+/******************************************
+ * Bio
+ *****************************************/
+body.bio .bio h1
+{
+  padding                 : 10px 0 0 0;
+}
+
+body.bio .bio h3
+{
+ font-variant             : small-caps;
+}
+
+body.bio .bio img
+{
+  float                   : left;
+  width                   : 200px;
+  border                  : black solid 1px;
+  margin                  : 10px 10px 10px 0;
+}
+
+body.bio .bio p
+{
+  font-size               : 0.9em;
+}
+
+/******************************************
+ * Bio listings by year
+ *****************************************/
+body.bio_year_list .bio
+{
+  padding                 : 5px;
+  margin                  : 0 0 30px 0;
+  /*
+  border-top              : 1px solid black;
+  border-bottom           : 1px solid black;
+  */
+}
+
+body.bio_year_list .bio h3
+{
+  text-align              : center;
+  margin-bottom           : 3px;
+}
+
+body.bio_year_list .bio h4
+{
+  text-align              : center;
+  padding-bottom          : 10px;
+  margin                  : 10px;
+  font-variant            : small-caps;
+  font-weight             : normal;
+}
+
+body.bio_year_list .bio img
+{
+  width                   : 150px;
+  float                   : left;
+  border                  : black solid 1px;
+  margin                  : 10px 10px 10px 0;
+}
+
+body.bio_year_list .bio p
+{
+  padding                 : 0px;
+  font-size               : 0.9em;
 }

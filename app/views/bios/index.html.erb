@@ -7,6 +7,7 @@
     <th>Full image url</th>
     <th>Bio</th>
     <th>Cal year</th>
+    <th>Month</th>
   </tr>
 
 <% @bios.each do |bio| %>
@@ -16,6 +17,7 @@
     <td><%=h bio.full_image_url %></td>
     <td><%=h bio.bio %></td>
     <td><%=h bio.cal_year_id %></td>
+    <td><%=h bio.month %></td>
     <td><%= link_to 'Show', bio %></td>
     <td><%= link_to 'Edit', edit_bio_path(bio) %></td>
     <td><%= link_to 'Destroy', bio, :confirm => 'Are you sure?', :method => :delete %></td>

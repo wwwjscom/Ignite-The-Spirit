@@ -1,4 +1,7 @@
 class BiosController < ApplicationController
+
+  before_filter :bouncer, :except => [:index, :show]
+
   # GET /bios
   # GET /bios.xml
   def index

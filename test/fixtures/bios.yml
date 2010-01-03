@@ -6,6 +6,7 @@ one:
   full_image_url: MyString
   bio: MyText
   cal_year_id: 1
+  month: MyString
 
 two:
   name: MyString
@@ -13,3 +14,4 @@ two:
   full_image_url: MyString
   bio: MyText
   cal_year_id: 1
+  month: MyString

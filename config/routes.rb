@@ -13,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   # pages
   map.about '/about.aspx', :controller => 'welcomes', :action => 'about'
   map.home '/index.aspx', :controller => 'welcomes'
-  map.meet '/meet.aspx', :controller => 'meets', :action => 'index'
+  map.meet '/meet', :controller => 'cal_years', :action => 'index'
   map.store '/store.aspx', :controller => 'store'
   map.supporters '/supporters.aspx', :controller => 'welcomes', :action => 'supporters'
   map.contact '/contact.aspx', :controller => 'welcomes', :action => 'contact'

@@ -1,28 +1,18 @@
-<p>
-  <b>Name:</b>
-  <%=h @bio.name %>
-</p>
+<% title "#{@bio.name} - #{@bio.month}, #{@bio.cal_year}" %>
+<% body_class 'bio' %>
 
-<p>
-  <b>Thumb image url:</b>
-  <%=h @bio.thumb_image_url %>
-</p>
+<div class="bio">
+  <h1><%= @bio.name %></h1>
+  <h3><%= @bio.cal_year %> - <%= @bio.month %></h3>
 
-<p>
-  <b>Full image url:</b>
-  <%=h @bio.full_image_url %>
-</p>
+  <%= image_tag @bio.full_image_url %>
 
-<p>
-  <b>Bio:</b>
-  <%=h @bio.bio %>
-</p>
+  <%= simple_format @bio.bio %>
 
-<p>
-  <b>Cal year:</b>
-  <%=h @bio.cal_year_id %>
-</p>
+  <div style="clear: both;"></div>
 
 
-<%= link_to 'Edit', edit_bio_path(@bio) %> |
-<%= link_to 'Back', bios_path %>
+  <% if admin? %>
+    <%= link_to 'Edit', edit_bio_path(@bio) %>
+  <% end %>
+</div>

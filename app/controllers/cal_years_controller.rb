@@ -1,4 +1,7 @@
 class CalYearsController < ApplicationController
+
+  before_filter :bouncer, :except => [:index, :show]
+
   # GET /cal_years
   # GET /cal_years.xml
   def index

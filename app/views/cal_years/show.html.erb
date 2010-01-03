@@ -1,8 +1,21 @@
-<p>
-  <b>Year:</b>
-  <%=h @cal_year.year %>
-</p>
+<% title "#{@cal_year.year} Calendar" %>
+<% body_class 'bio_year_list' %>
+
+<h1><%= @cal_year.year %> Profiles</h1>
 
 
-<%= link_to 'Edit', edit_cal_year_path(@cal_year) %> |
-<%= link_to 'Back', cal_years_path %>
+<% @cal_year.bios.each do |bio| %>
+  <div class="bio">
+    <h3><%= bio.name %></h3>
+    <h4><%= bio.month %></h4>
+    <%= link_to image_tag(bio.thumb_image_url), bio_path(bio) %>
+    <%= simple_format truncate(bio.bio, :length => 800, :omission => "...<br />#{link_to '(more)', bio}") %>
+    <div style="clear: both;"></div>
+  </div>
+<% end %>
+
+<br /> <br />
+
+<% if admin? %>
+  <%= link_to 'Edit', edit_cal_year_path(@cal_year) %>
+<% end %>

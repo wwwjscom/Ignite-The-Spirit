@@ -9,12 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100103065314) do
+ActiveRecord::Schema.define(:version => 20100103070543) do
+
+  create_table "bios", :force => true do |t|
+    t.string   "name"
+    t.string   "thumb_image_url"
+    t.string   "full_image_url"
+    t.text     "bio"
+    t.integer  "cal_year_id"
+    t.integer  "month_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "cal_years", :force => true do |t|
     t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "months", :force => true do |t|
+    t.string "month"
   end
 
   create_table "posts", :force => true do |t|

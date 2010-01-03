@@ -1,6 +1,7 @@
 class Admin < ActiveRecord::Base
 
+  # Unless the pw is right, bounce em!
   def self.bounce?(pw)
-    pw == ADMIN_PW
+    not pw == ADMIN_PW
   end
 end

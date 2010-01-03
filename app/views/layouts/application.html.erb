@@ -16,6 +16,10 @@
           <td width=115 valign=top align=center bgcolor=e5e5e5>
             <%= image_tag 'lilshimmy.gif', :height => 5 %><br>
             <%= image_tag 'logo.gif' %><br>
+
+            <% if admin? %>
+              <%= link_to 'Logout', logout_admins_path %>
+            <% end %>
           </td>
 
           <!-- content -->

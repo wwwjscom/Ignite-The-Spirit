@@ -23,4 +23,10 @@ class AdminsController < ApplicationController
     end
   end
 
+
+  def logout
+    session[:admin] = nil
+    redirect_to root_path
+  end
+
 end

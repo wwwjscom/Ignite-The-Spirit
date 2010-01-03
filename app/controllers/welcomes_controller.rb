@@ -10,12 +10,14 @@ class WelcomesController < ApplicationController
   end
 
   def contact
-    render :action => 'contact_thanks' if request.post?
+    if request.post?
+      msg = { :msg => params[:msg], :name => params[:name], :email => params[:email] }
+      Postoffice.deliver_contact_form(msg)
+      render :action => 'contact_thanks'
+    end
   end
 
   def contact_thanks
-    msg = { :msg => params[:msg], :name => params[:name], :email => params[:email] }
-    Postoffice.deliver_contact_form(msg)
   end
 
 end

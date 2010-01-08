@@ -37,7 +37,7 @@
     <% end %>
   </p>
   <% unless @bio.thumb_image.blank? %>
-    <p>Current thumb image: <br /><%= image_tag @bio.thumb_image.public_filename %>
+    <p>Current thumb image: <br /><%= image_tag @bio.thumb_image.public_filename, :width => '100', :height => 200 %>
   <% end %>
 
   <p>
@@ -49,7 +49,7 @@
     <% end %>
   </p>
   <% unless @bio.full_image.blank? %>
-    <p>Current full image: <br /><%= image_tag @bio.full_image.public_filename %>
+    <p>Current full image: <br /><%= image_tag @bio.full_image.public_filename, :width => '100', :height => 200 %>
   <% end %>
 
   <p>

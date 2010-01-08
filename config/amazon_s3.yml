@@ -1,0 +1,9 @@
+development:
+  bucket_name: ignite-the-spirit # can't use _'s in the name
+  access_key_id: AKIAI6JUPTPBL36SB6BQ
+  secret_access_key: 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
+
+production:
+  bucket_name: ignite-the-spirit # can't use _'s in the name
+  access_key_id: AKIAI6JUPTPBL36SB6BQ
+  secret_access_key: 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

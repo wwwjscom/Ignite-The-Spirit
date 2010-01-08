@@ -9,12 +9,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100103070543) do
+ActiveRecord::Schema.define(:version => 20100108092852) do
 
   create_table "bios", :force => true do |t|
     t.string   "name"
-    t.string   "thumb_image_url"
-    t.string   "full_image_url"
     t.text     "bio"
     t.integer  "cal_year_id"
     t.integer  "month_id"
@@ -37,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20100103070543) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "uploads", :force => true do |t|
+    t.string  "filename"
+    t.integer "size"
+    t.string  "content_type"
+    t.integer "bio_id"
+    t.boolean "thumb"
   end
 
 end

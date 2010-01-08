@@ -58,8 +58,24 @@ class BiosController < ApplicationController
   def update
     @bio = Bio.find(params[:id])
 
+
     respond_to do |format|
       if @bio.update_attributes(params[:bio])
+
+        # Only execute this code if a new image was selected
+        unless params[:thumb_image][:uploaded_data].blank?
+          Upload.delete_old(true, @bio.id)
+          thumb_image = Upload.new(params[:thumb_image])
+          thumb_image.save
+        end
+
+        # Only execute this code if a new image was selected
+        unless params[:full_image][:uploaded_data].blank?
+          Upload.delete_old(false, @bio.id)
+          full_image = Upload.new(params[:full_image])
+          full_image.save
+        end
+
         flash[:notice] = 'Bio was successfully updated.'
         format.html { redirect_to(@bio) }
         format.xml  { head :ok }

@@ -8,10 +8,10 @@
   <div class="bio">
     <h3><%= bio.name %></h3>
     <h4><%= bio.month %></h4>
-    <% if bio.thumb_image_url.blank? %>
+    <% if bio.thumb_image.blank? %>
       <%= link_to image_tag('ff_silhouette_thumb.jpg'), bio_path(bio) %>
     <% else %>
-      <%= link_to image_tag(bio.thumb_image_url), bio_path(bio) %>
+      <%= link_to image_tag(bio.thumb_image.public_filename), bio_path(bio) %>
     <% end %>
     <%= simple_format truncate(bio.bio, :length => 800, :omission => "...<br />#{link_to '(more)', bio}") %>
     <div style="clear: both;"></div>

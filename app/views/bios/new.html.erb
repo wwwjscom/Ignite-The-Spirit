@@ -8,14 +8,6 @@
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :thumb_image_url %><br />
-    <%= f.text_field :thumb_image_url %>
-  </p>
-  <p>
-    <%= f.label :full_image_url %><br />
-    <%= f.text_field :full_image_url %>
-  </p>
-  <p>
     <%= f.label :bio %><br />
     <%= f.text_area :bio %>
   </p>
@@ -27,6 +19,32 @@
     <%= f.label :month_id %><br />
     <%= f.collection_select :month_id, Month.all, :id, :month %>
   </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+
+
+  <hr />
+  <h3>Profile Images (Optional)</h3>
+
+  <p>
+    <% fields_for :full_image do |u| %>
+      <%= u.label :uploaded_data, 'Thumb image' %>
+      <%= u.file_field :uploaded_data %><br />
+      <%= u.hidden_field :thumb, :value => true %>
+      <%= u.hidden_field :bio_id, :value => @bio.id %>
+    <% end %>
+  </p>
+
+  <p>
+    <% fields_for :thumb_image do |u| %>
+      <%= u.label :uploaded_data, 'Full image' %>
+      <%= u.file_field :uploaded_data %><br />
+      <%= u.hidden_field :thumb, :value => false %>
+      <%= u.hidden_field :bio_id, :value => @bio.id %>
+    <% end %>
+  </p>
+
   <p>
     <%= f.submit 'Create' %>
   </p>

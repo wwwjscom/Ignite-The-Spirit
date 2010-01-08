@@ -5,10 +5,10 @@
   <h1><%= @bio.name %></h1>
   <h3><%= @bio.cal_year %> - <%= @bio.month %></h3>
 
-  <% if @bio.full_image_url.blank? %>
+  <% if @bio.full_image.blank? %>
     <%= image_tag 'ff_silhouette.jpg' %>
   <% else %>
-    <%= image_tag @bio.full_image_url %>
+    <%= image_tag @bio.full_image.public_filename %>
   <% end %>
 
   <%= simple_format @bio.bio %>

@@ -1,20 +1,13 @@
 <h1>Editing bio</h1>
 
-<% form_for(@bio) do |f| %>
+<% form_for(@bio, :html => { :multipart => true }) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
-  <p>
-    <%= f.label :thumb_image_url %><br />
-    <%= f.text_field :thumb_image_url %>
-  </p>
-  <p>
-    <%= f.label :full_image_url %><br />
-    <%= f.text_field :full_image_url %>
-  </p>
+
   <p>
     <%= f.label :bio %><br />
     <%= f.text_area :bio %>
@@ -27,6 +20,38 @@
     <%= f.label :month %><br />
     <%= f.collection_select :month_id, Month.all, :id, :month %>
   </p>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+
+  <hr />
+  <h3>Change Profile Images (Optional)</h3>
+
+  <p>
+    <% fields_for :thumb_image do |u| %>
+      <%= u.label :uploaded_data, 'Thumb image' %>
+      <%= u.file_field :uploaded_data %><br />
+      <%= u.hidden_field :thumb, :value => true %>
+      <%= u.hidden_field :bio_id, :value => @bio.id %>
+    <% end %>
+  </p>
+  <% unless @bio.thumb_image.blank? %>
+    <p>Current thumb image: <br /><%= image_tag @bio.thumb_image.public_filename %>
+  <% end %>
+
+  <p>
+    <% fields_for :full_image do |u| %>
+      <%= u.label :uploaded_data, 'Full image' %>
+      <%= u.file_field :uploaded_data %><br />
+      <%= u.hidden_field :thumb, :value => 'false' %>
+      <%= u.hidden_field :bio_id, :value => @bio.id %>
+    <% end %>
+  </p>
+  <% unless @bio.full_image.blank? %>
+    <p>Current full image: <br /><%= image_tag @bio.full_image.public_filename %>
+  <% end %>
+
   <p>
     <%= f.submit 'Update' %>
   </p>

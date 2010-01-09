@@ -5,7 +5,7 @@ class CalYearsController < ApplicationController
   # GET /cal_years
   # GET /cal_years.xml
   def index
-    @cal_years = CalYear.all
+    @cal_years = CalYear.all_ordered
 
     respond_to do |format|
       format.html # index.html.erb
